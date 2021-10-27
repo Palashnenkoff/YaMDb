@@ -21,9 +21,11 @@
 ```
 git clone https://github.com/Palashnenkoff/infra_sp2.git
 ```
-Если Docker еще не устанвлен скачайте и установите его по ссылке
+Если Docker еще не устанвлен скачайте и установите его по ссылке https://www.docker.com/products/docker-desktop
+
+Перейдите в директорию с проектом
 ```
-https://www.docker.com/products/docker-desktop
+cd infra_sp2
 ```
 
 #### **Так как переменные базы данных подгружаются из скрытого файла .env,  переименуйте файл .env.example в .env и внем же установите свой пароль для доступа к БД**
