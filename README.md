@@ -63,6 +63,7 @@ docker-compose exec web python manage.py loaddata fixtures.json
 ```
 В админке http://127.0.0.1/admin/ в разделах Categories	Genres и Titles появятся тестовые данные. 
 
+
 # Реккомендации при сворачивании проекта(очистка памяти):
 Остановка и удаление контейнеров:
 ```
