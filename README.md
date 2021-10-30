@@ -32,7 +32,7 @@ YamDB - это база отзывов о фильмах, книгах и муз
 
 Запустите терминал и клонируйте репозиторий 
 ```
-git clone https://github.com/Palashnenkoff/YamDB.git
+git clone https://github.com/Palashnenkoff/infra_sp2.git
 ```
 Перейдите в директорию с проектом
 ```
