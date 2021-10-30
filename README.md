@@ -5,6 +5,15 @@ YamDB - это база отзывов о фильмах, книгах и муз
 Посмотреть отзывы могут любые пользователи. Для написания собственных отзывов, комментирования и оценки необходима регистрация
 
 ## **Оглавление**
+[Используемые технологии](https://github.com/Palashnenkoff/infra_sp2/blob/master/README.md#%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
+[Запуск приложения](https://github.com/Palashnenkoff/infra_sp2/blob/master/README.md#%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
+[Запуск приложения с помощь контейнеризации Docker](https://github.com/Palashnenkoff/infra_sp2/blob/master/README.md#%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-docker)
+[Создание суперпользователя](https://github.com/Palashnenkoff/infra_sp2/blob/master/README.md#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F)
+[Заполнение базы начальными данными](https://github.com/Palashnenkoff/infra_sp2/blob/master/README.md#%D0%B7%D0%B0%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B1%D0%B0%D0%B7%D1%8B-%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8)
+[Реккомендации при сворачивании проекта(очистка памяти)](https://github.com/Palashnenkoff/infra_sp2/blob/master/README.md#%D1%80%D0%B5%D0%BA%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8-%D0%BF%D1%80%D0%B8-%D1%81%D0%B2%D0%BE%D1%80%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8)
+[Локальный запуск приложения](https://github.com/Palashnenkoff/infra_sp2/blob/master/README.md#%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
+[Создание суперпользователя](https://github.com/Palashnenkoff/infra_sp2/blob/master/README.md#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F-1)
+[Заполнение базы начальными данными](https://github.com/Palashnenkoff/infra_sp2/blob/master/README.md#%D0%B7%D0%B0%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B1%D0%B0%D0%B7%D1%8B-%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8-1)
 
 
 ## **Используемые технологии**
@@ -75,7 +84,7 @@ docker-compose exec web python manage.py loaddata fixtures.json
 ```
 В админке http://127.0.0.1/admin/ в разделах Categories	Genres и Titles появятся тестовые данные. 
 
-## *Реккомендации при сворачивании проекта(очистка памяти):*
+## *Реккомендации при сворачивании проекта(очистка памяти)*
 * Остановка и удаление контейнеров:
 ```
 docker-compose down
