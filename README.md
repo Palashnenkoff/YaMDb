@@ -143,5 +143,5 @@ python manage.py loaddata fixtures.json
 python manage.py runserver
 ```
 
-Теперь проект доступен по адресу http://127.0.0.1/admin/
-Описание API проекта доступно по адресу http://127.0.0.1/redoc/
+Теперь проект доступен по адресу http://http://127.0.0.1:8000/admin/
+Описание API проекта доступно по адресу http://http://127.0.0.1:8000/redoc/
